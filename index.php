@@ -3,9 +3,9 @@
 require './vendor/autoload.php';
 
 $cnpj = new \src\Consultacnpj\Consulta_cnpj();
-$cnpj->setCnpj('07146455000169');
+//$cnpj->setCnpj($cnpj);
 
-var_dump($cnpj->callback());
+//var_dump($cnpj->callback());
 
 
 

@@ -13,7 +13,7 @@ class Consulta_cnpj {
     private $urlReceita;
     private $param;
     private $cnpj;
-    private $calback;
+    
 
     public function __construct() {
         $this->urlReceita = "http://www.receitaws.com.br/v1/cnpj/";
