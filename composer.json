@@ -1,0 +1,21 @@
+{
+    "name": "guilherme-fagundes/consultacnpj",
+    "description": "Esta biblioteca realiza a consulta de cnpj na base do web service da REceita Federal",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme-fagundes",
+            "email": "guilhermekonflanz94@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    
+    "autoload":{
+        "psr-4":{
+            "src\\": "Source"
+        }
+    }
+}
