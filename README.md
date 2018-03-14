@@ -1,4 +1,4 @@
-#### Instalarion
+#### Instalation
 
 ```sh
 composer require guilherme-fagundes/consultacnpj
