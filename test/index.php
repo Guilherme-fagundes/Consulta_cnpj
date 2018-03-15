@@ -7,6 +7,8 @@ $cnpj->setCnpj('10548698000138');
 
 var_dump($cnpj->callback());
 
+echo '<hr>';
+
 
 
 

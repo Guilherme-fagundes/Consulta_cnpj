@@ -49,5 +49,30 @@ class Consulta_cnpj {
 
         curl_close($ch);
     }
+    
+    public function dataSituacao()
+    {
+        return $this->callback()->data_situacao;
+    }
+    public function complemento()
+    {
+        return $this->callback()->complemento;
+    }
+    public function nome()
+    {
+        return $this->callback()->nome;
+    }
+    public function uf()
+    {
+        return $this->callback()->uf;
+    }
+    public function telefone()
+    {
+        return $this->callback()->telefone;
+    }
+    public function email()
+    {
+        return $this->callback()->email;
+    }
 
 }
