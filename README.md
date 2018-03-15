@@ -4,7 +4,8 @@
 composer require guilherme-fagundes/consultacnpj
 ```
 
-Instancie a classe e informer o parametro, apos chame o metodo Callback
+Instancie a classe e informer o parametro pelo metodo setCNPJ()
+Para obter os resultados, passe os valores respectivos no local adequado
 
 
 ```sh
