@@ -10,7 +10,7 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "1.2",
+    "minimum-stability": "stable",
     "require": {},
     
     "autoload":{
