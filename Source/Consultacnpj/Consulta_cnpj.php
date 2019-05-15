@@ -31,132 +31,247 @@ class Consulta_cnpj {
         $this->param = $this->urlReceita. $this->cnpj;
     }
 
-    /**
-     * @return callback
-     */
-    private function callback() {
-        return $this->setUrl();
-    }
-
-    private function setUrl() {
-
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $this->param);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-        return $retorno = json_decode(curl_exec($ch));
 
 
-        curl_close($ch);
-    }
-    
-    public function dataSituacao()
+
+     /**
+      * @return mixed
+      */
+     public function dataSituacao()
     {
         return $this->callback()->data_situacao;
     }
-    public function complemento()
+
+     /**
+      * @return mixed
+      */
+     public function complemento()
     {
         return $this->callback()->complemento;
     }
-    public function nome()
+
+     /**
+      * @return mixed
+      */
+     public function nome()
     {
         return $this->callback()->nome;
     }
-    public function uf()
+
+     /**
+      * @return mixed
+      */
+     public function uf()
     {
         return $this->callback()->uf;
     }
-    public function telefone()
+
+     /**
+      * @return mixed
+      */
+     public function telefone()
     {
         return $this->callback()->telefone;
     }
-    public function email()
+
+     /**
+      * @return mixed
+      */
+     public function email()
     {
         return $this->callback()->email;
     }
-    public function situacao()
+
+     /**
+      * @return mixed
+      */
+     public function situacao()
     {
         return $this->callback()->situacao;
     }
-    public function bairro()
+
+     /**
+      * @return mixed
+      */
+     public function bairro()
     {
         return $this->callback()->bairro;
     }
-    public function logradouro()
+
+     /**
+      * @return mixed
+      */
+     public function logradouro()
     {
         return $this->callback()->logradouro;
     }
-    public function numero()
+
+     /**
+      * @return mixed
+      */
+     public function numero()
     {
         return $this->callback()->numero;
     }
-    public function cep()
+
+     /**
+      * @return mixed
+      */
+     public function cep()
     {
         return $this->callback()->cep;
     }
-    public function municipio()
+
+     /**
+      * @return mixed
+      */
+     public function municipio()
     {
         return $this->callback()->municipio;
     }
-    public function abertura()
+
+     /**
+      * @return mixed
+      */
+     public function abertura()
     {
         return $this->callback()->abertura;
     }
-    public function naturezaJuridica()
+
+     /**
+      * @return mixed
+      */
+     public function naturezaJuridica()
     {
         return $this->callback()->natureza_juridica;
     }
-    public function fantasia()
+
+     /**
+      * @return mixed
+      */
+     public function fantasia()
     {
         return $this->callback()->fantasia;
     }
-    public function cnpj()
+
+     /**
+      * @return mixed
+      */
+     public function cnpj()
     {
         return $this->callback()->cnpj;
     }
-    public function ultimaAtualizacao()
+
+     /**
+      * @return mixed
+      */
+     public function ultimaAtualizacao()
     {
         return $this->callback()->ultima_atualizacao;
     }
-    public function status()
+
+     /**
+      * @return mixed
+      */
+     public function status()
     {
         return $this->callback()->status;
     }
-    public function tipo()
+
+     /**
+      * @return mixed
+      */
+     public function tipo()
     {
         return $this->callback()->tipo;
     }
-    public function efr()
+
+     /**
+      * @return mixed
+      */
+     public function efr()
     {
         return $this->callback()->efr;
     }
-    public function motivoSituacao()
+
+     /**
+      * @return mixed
+      */
+     public function motivoSituacao()
     {
         return $this->callback()->motivo_situacao;
     }
-    public function situacaoEspecial()
+
+     /**
+      * @return mixed
+      */
+     public function situacaoEspecial()
     {
         return $this->callback()->situacao_especial;
     }
-    public function dataSituacaoEspecial()
+
+     /**
+      * @return mixed
+      */
+     public function dataSituacaoEspecial()
     {
         return $this->callback()->data_situacao_especial;
     }
-    public function capitalSocial()
+
+     /**
+      * @return mixed
+      */
+     public function capitalSocial()
     {
         return $this->callback()->capital_social;
     }
-    public function atividadePrincipal()
+
+     /**
+      * @return array
+      */
+     public function atividadePrincipal()
     {
         return $this->callback()->atividade_principal;
     }
-    public function qsa()
+
+     /**
+      * @return array
+      */
+     public function qsa()
     {
         return $this->callback()->qsa;
     }
-    public function atividadesSecundarias()
+
+     /**
+      * @return array
+      */
+     public function atividadesSecundarias()
     {
         return $this->callback()->atividades_secundarias;
     }
+
+##################################################
+#################### PRIVATES ####################
+##################################################
+
+
+     /**
+      * @return callback
+      */
+     private function callback() {
+          return $this->setUrl();
+     }
+
+     private function setUrl() {
+
+          $ch = curl_init();
+          curl_setopt($ch, CURLOPT_URL, $this->param);
+          curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+          return $retorno = json_decode(curl_exec($ch));
+
+
+          curl_close($ch);
+     }
 
 }
