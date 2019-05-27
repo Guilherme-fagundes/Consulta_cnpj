@@ -1,7 +1,7 @@
 {
     "name": "guilherme-fagundes/consultacnpj",
     "description": "Esta biblioteca realiza a consulta de cnpj na base do web service da Receita Federal",
-    "type": "ibrary",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
