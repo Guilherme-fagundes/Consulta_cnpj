@@ -270,8 +270,6 @@ class Consulta_cnpj
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         return $retorno = json_decode(curl_exec($ch));
-
-
         curl_close($ch);
     }
 
