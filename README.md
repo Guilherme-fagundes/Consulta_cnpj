@@ -1,3 +1,8 @@
+[![Latest Stable Version](https://poser.pugx.org/guilherme-fagundes/consultacnpj/version)](https://packagist.org/packages/guilherme-fagundes/consultacnpj)
+[![Total Downloads](https://poser.pugx.org/guilherme-fagundes/consultacnpj/downloads)](https://packagist.org/packages/guilherme-fagundes/consultacnpj)
+[![License](https://poser.pugx.org/guilherme-fagundes/consultacnpj/license)](https://packagist.org/packages/guilherme-fagundes/consultacnpj)
+
+
 #### Instalation
 
 ```sh
