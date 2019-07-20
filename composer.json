@@ -5,19 +5,20 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Guilherme-fagundes",
+            "name": "Guilherme-Fagundes",
             "email": "guilhermekonflanz94@gmail.com",
-            "role": "Developer"
+            "role": "web Developer"
         }
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.0.0",
+        "ext-cURL": "*"
     },
     
     "autoload":{
         "psr-4":{
-            "src\\": "Source",
+            "src\\": "Source/",
             "App\\": "app/"
         }
     },
@@ -27,7 +28,7 @@
         }
     },
     "extra": {
-        "frameworks": ["laravel"]
+        "frameworks": ["laravel", "symfony", "codeignitet", "zend"]
     }
 
 }
