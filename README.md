@@ -24,6 +24,7 @@ $cnpj->setCnpj($cnpj);
 
 ```
 
+Está é uma classe mantida por Guilherme K. Fagundes
 
 
 
