@@ -1,5 +1,5 @@
 {
-    "name": "guilherme-fagundes/consultacnpj",
+    "name": "guilherme-fagundes/consultacnpj-OFICIAL",
     "description": "Esta biblioteca realiza a consulta de cnpj na base do web service da Receita Federal",
     "keywords": ["Consulta", "Consultacnpj", "guilherme-fagundes", "consulta-cnpj"],
     "type": "library",
@@ -8,7 +8,7 @@
         {
             "name": "Guilherme-Fagundes",
             "email": "guilhermekonflanz94@gmail.com",
-            "role": "web Developer"
+            "role": "web Developer / System Analyst"
         }
     ],
     "minimum-stability": "stable",
