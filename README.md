@@ -19,13 +19,12 @@ Para obter os resultados, passe os valores respectivos no local adequado
 
 require './vendor/autoload.php';
 
-$cnpj = new \src\Consultacnpj\Consulta_cnpj();
+$cnpj = new \src\Consultacnpj\Consulta_cnpj(true); // true = https || false = http
 $cnpj->setCnpj($cnpj);
 
 ```
 
 Está é uma classe mantida por Guilherme K. Fagundes
-
 
 
 

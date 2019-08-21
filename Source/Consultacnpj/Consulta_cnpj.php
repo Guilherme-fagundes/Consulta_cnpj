@@ -4,21 +4,24 @@ namespace src\Consultacnpj;
 
 /**
  * <p>##### CLASSE RESPONSAVEL POR REALIZAR A CONSULTA CADASTRAL DE CNPJ NA RECEITA FEDERAL ########</p>
- *
+ * @package guilherme-fagundes/consultacnpj
  * @copyright (c) 2018, GUILHERME K. FAGUNDES
  *
  */
-class Consulta_cnpj
+class Consulta_cnpj implements Iconsultacnpj
 {
 
     private $urlReceita;
     private $param;
     private $cnpj;
+    private $data;
 
-
-    public function __construct()
+    public function __construct(bool $security)
     {
-        $this->urlReceita = "http://www.receitaws.com.br/v1/cnpj/";
+        $this->data = $security;
+        $this->checkSecurity();
+//
+        $this->checkPhpVersion();
     }
 
     /**
@@ -273,4 +276,23 @@ class Consulta_cnpj
         curl_close($ch);
     }
 
+    private function checkSecurity()
+    {
+        if ($this->data == true){
+            $this->urlReceita = "https://www.receitaws.com.br/v1/cnpj/";
+        }else{
+            $this->urlReceita = "http://www.receitaws.com.br/v1/cnpj/";
+        }
+
+    }
+
+
+    function checkPhpVersion()
+    {
+        if (!phpversion() >= '7.0') {
+            throw new \Exception("Sua versão do PHP é inferior a 7.0", 501);
+            return false;
+
+        }
+    }
 }
