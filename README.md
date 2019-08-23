@@ -23,7 +23,7 @@ $cnpj = new \src\Consultacnpj\Consulta_cnpj(true); // true = https || false = ht
 $cnpj->setCnpj($cnpj);
 
 ```
-
+[Definição dos tipos de erros](ERROS.md)<br>
 Está é uma classe mantida por Guilherme K. Fagundes
 
 

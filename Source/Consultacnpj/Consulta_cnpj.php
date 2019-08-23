@@ -15,13 +15,15 @@ class Consulta_cnpj implements Iconsultacnpj
     private $param;
     private $cnpj;
     private $data;
+    private $request;
 
     public function __construct(bool $security)
     {
+
         $this->data = $security;
         $this->checkSecurity();
-//
         $this->checkPhpVersion();
+
     }
 
     /**
@@ -278,21 +280,43 @@ class Consulta_cnpj implements Iconsultacnpj
 
     private function checkSecurity()
     {
-        if ($this->data == true){
+        if ($this->data == true) {
             $this->urlReceita = "https://www.receitaws.com.br/v1/cnpj/";
-        }else{
+            if (!extension_loaded('openssl')) {
+                trigger_error('Extensão openssl não habilitada', E_USER_WARNING);
+            }
+            $this->request();
+
+
+        } else {
             $this->urlReceita = "http://www.receitaws.com.br/v1/cnpj/";
         }
-
     }
 
 
     function checkPhpVersion()
     {
         if (!phpversion() >= '7.0') {
-            throw new \Exception("Sua versão do PHP é inferior a 7.0", 501);
-            return false;
+            trigger_error("Sua versão do PHP é inferior a 7.0", E_USER_WARNING);
+            die;
+
 
         }
+
+
     }
+
+    private function request()
+    {
+        $this->request = filter_input(INPUT_SERVER, 'REQUEST_SCHEME', FILTER_VALIDATE_BOOLEAN);
+
+        if ($this->request != $this->data){
+           trigger_error("Requisição inválida", E_USER_ERROR);
+           die;
+
+    }
+
+    }
+
+
 }
