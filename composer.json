@@ -14,7 +14,8 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0.0",
-        "ext-cURL": "*"
+        "ext-cURL": "*",
+        "ext-openssl": "*"
     },
     
     "autoload":{
