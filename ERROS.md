@@ -11,7 +11,7 @@ Caso informe no construtor da classe como <b>false</b>, sua aplicação deve uti
 <i>É aconselhavel utilizar https em sua aplicação!</i>
 
 * <b>Extensão openssl não habilitada:</b><br>
-Este erro é apresentado quando a extenção <i>openssl</i> não está ativada em seu php.ini. Para ativa-la, acesse o arquivo e descomente a linha<br>
+Este erro é apresentado quando a extensão <i>openssl</i> não está ativada em seu php.ini. Para ativa-la, acesse o arquivo e descomente a linha<br>
 ```extension=php_openssl``` 
 
 [voltar](README.md)

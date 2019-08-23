@@ -29,7 +29,7 @@
         }
     },
     "extra": {
-        "frameworks": ["laravel", "symfony", "codeignitet", "zend"]
+        "frameworks": ["laravel", "symfony", "codeigniter", "zend"]
     }
 
 }
