@@ -1,7 +1,7 @@
 <?php
 
 
-namespace src\Consultacnpj;
+namespace consultacnpj\Consultacnpj;
 
 
 interface Iconsultacnpj

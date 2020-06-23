@@ -11,9 +11,9 @@ class ComposerStaticInite59fbb3f2b32d99cf568c429a4d94dc4
         array (
             'test\\' => 5,
         ),
-        's' => 
+        'c' => 
         array (
-            'src\\' => 4,
+            'consultacnpj\\' => 13,
         ),
         'A' => 
         array (
@@ -26,7 +26,7 @@ class ComposerStaticInite59fbb3f2b32d99cf568c429a4d94dc4
         array (
             0 => __DIR__ . '/../..' . '/test',
         ),
-        'src\\' => 
+        'consultacnpj\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Source',
         ),

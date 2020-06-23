@@ -2,8 +2,9 @@
 
 require "../vendor/autoload.php";
 
-$cnpj = new \src\Consultacnpj\Consulta_cnpj(1);
-//$cnpj->setCnpj($cnpj);
+$cnpj = new \consultacnpj\Consultacnpj\Consulta_cnpj(0);
+//$cnpj->setCnpj();
+
 
 var_dump($cnpj);
 

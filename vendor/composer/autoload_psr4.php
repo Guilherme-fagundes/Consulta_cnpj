@@ -7,6 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'test\\' => array($baseDir . '/test'),
-    'src\\' => array($baseDir . '/Source'),
+    'consultacnpj\\' => array($baseDir . '/Source'),
     'App\\' => array($baseDir . '/app'),
 );
