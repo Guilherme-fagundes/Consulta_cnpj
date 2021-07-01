@@ -1,6 +1,6 @@
 <?php
 
-namespace consultacnpj\Consultacnpj;
+namespace Consultas\Consultacnpj;
 
 /**
  * <p>##### CLASSE RESPONSAVEL POR REALIZAR A CONSULTA CADASTRAL DE CNPJ NA RECEITA FEDERAL ########</p>
@@ -8,7 +8,7 @@ namespace consultacnpj\Consultacnpj;
  * @copyright (c) 2018, GUILHERME K. FAGUNDES
  *
  */
-class Consulta_cnpj implements Iconsultacnpj
+class Consulta_cnpj implements IConsultacnpj
 {
 
     private $urlReceita;
@@ -27,11 +27,11 @@ class Consulta_cnpj implements Iconsultacnpj
     }
 
     /**
-     * @param string $cnpj
-     * <b>Informe um valor do tipo string numerica</b>
+     * @param int $cnpj
+     * <b>Informe um valor do tipo int. Apenas numeros</b>
      *
      */
-    public function setCnpj(string $cnpj)
+    public function setCnpj(int $cnpj)
     {
         $this->cnpj = $cnpj;
         $this->param = $this->urlReceita . $this->cnpj;
@@ -240,6 +240,7 @@ class Consulta_cnpj implements Iconsultacnpj
 
     /**
      * @return array
+     * <p>Retorna o quadro de socios</p>
      */
     public function qsa()
     {
@@ -248,6 +249,7 @@ class Consulta_cnpj implements Iconsultacnpj
 
     /**
      * @return array
+     * <p>Retorna atividades secundárias</p>
      */
     public function atividadesSecundarias()
     {
