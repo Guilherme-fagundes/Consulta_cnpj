@@ -15,12 +15,20 @@ Para obter os resultados, passe os valores respectivos no local adequado
 
 
 ```sh
+
 <?php
 
-require './vendor/autoload.php';
 
-$cnpj = new \src\Consultacnpj\Consulta_cnpj(true); // true = https || false = http
-$cnpj->setCnpj($cnpj);
+use Consultas\Consultacnpj\Consulta_cnpj;
+
+require __DIR__.'/../vendor/autoload.php';
+
+$cnpj = new Consulta_cnpj(false);
+
+$cnpj->setCnpj($numeroDoCnpj);
+
+var_dump($cnpj->qsa());
+var_dump($cnpj->atividadesSecundarias());
 
 ```
 [Definição dos tipos de erros](ERROS.md)<br>
